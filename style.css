@@ -1,0 +1,152 @@
+:root {
+    --light: #D9D9D9;
+    --dark: #301e0d;
+    --darker: #382420;
+    --primary: #855E4E;
+    --secondary: #503125;
+    --accent: #787BCE;
+    --additional: #7e749a;
+}
+
+* {
+    margin: 0;
+}
+
+p {
+    font-family: "Intel One Mono", monospace;
+    font-size: 1.6rem;
+}
+
+body {
+    background-color: var(--primary);
+    background-size: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: var(--accent);
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+}
+
+header div {
+    background: url(./assets/menu/line_cover.png);
+    background-size: 100% 100%;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+#preHeader {
+    background-color: var(--primary);
+    height: 100vh;
+    width: 100vw;
+}
+
+nav {
+    font-family: "Lancelot", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    display: flex;
+    background-color: var(--secondary);
+    height: 100px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+    border: 3px var(--dark);
+    border-style: solid none;
+    z-index: 10;
+}
+
+nav div {
+    width: 20vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+nav a:nth-child(1) div {
+    background: url("./assets/menu/navBtn1.png");
+    background-size: 100% 100%;
+}
+
+nav a:nth-child(2) div {
+    background: url("./assets/menu/navBtn2.png");
+    background-size: 100% 100%;
+}
+
+nav a:nth-child(3) div {
+    background: url("./assets/menu/navBtn3.png");
+    background-size: 100% 100%;
+}
+
+nav div:hover {
+    transform: scale(120%);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    z-index: 1;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.active {
+    /* transform: scale(110%); */
+    color: var(--primary);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background: var(--light);
+    width: 70vw;
+    border: 1px var(--dark);
+    border-style: none solid;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    padding: 5vh 0;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    height: 25vh;
+    width: 70vw;
+}
+
+footer div {
+    background: url("./assets/textBG/blankPaper.png");
+    height: 10vh;
+    width: 45vw;
+    background-size: 100% auto;
+    background-position: 0 100%;
+    text-align: center;
+    padding: 1.5% 0;
+}
+
+footer div a {
+    text-decoration: underline;
+}

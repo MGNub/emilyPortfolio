@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Seng</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./projects.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+</head>
+<body>
+    <div id = "preHeader"></div>
+    <div id = "fixedBackground"></div>
+    <header>
+        <div>
+            <h1>Emily Seng</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="../index.html"><div>Bio</div></a>
+        <a href="../works/works.html"><div>Works</div></a>
+        <a href="" class="active"><div>Projects</div></a>
+    </nav>
+    <main>
+        <section id="sticky-container">
+            <div id="horizontal-container">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagE3B1ZCC9lv9mAGx7CoMqy2i8K0LrsOYIAdgdhaExA&s=10" alt="">
+                    <article>
+                        <h2>PROJECT 1</h2>
+                        <p>very cool project, I made it with my bear hands. much and much blood sweat and tears put into this, decades of effort and dedication for this one project. hire me.</p>
+                    </article>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagE3B1ZCC9lv9mAGx7CoMqy2i8K0LrsOYIAdgdhaExA&s=10" alt="">
+                    <article>
+                        <h2>PROJECT 2</h2>
+                        <p>very cool project, I made it with my bear hands. much and much blood sweat and tears put into this, decades of effort and dedication for this one project. hire me.</p>
+                    </article>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagE3B1ZCC9lv9mAGx7CoMqy2i8K0LrsOYIAdgdhaExA&s=10" alt="">
+                    <article>
+                        <h2>PROJECT 3</h2>
+                        <p>very cool project, I made it with my bear hands. much and much blood sweat and tears put into this, decades of effort and dedication for this one project. hire me.</p>
+                    </article>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagE3B1ZCC9lv9mAGx7CoMqy2i8K0LrsOYIAdgdhaExA&s=10" alt="">
+                    <article>
+                        <h2>PROJECT 4</h2>
+                        <p>very cool project, I made it with my bear hands. much and much blood sweat and tears put into this, decades of effort and dedication for this one project. hire me.</p>
+                    </article>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagE3B1ZCC9lv9mAGx7CoMqy2i8K0LrsOYIAdgdhaExA&s=10" alt="">
+                    <article>
+                        <h2>PROJECT 5</h2>
+                        <p>very cool project, I made it with my bear hands. much and much blood sweat and tears put into this, decades of effort and dedication for this one project. hire me.</p>
+                    </article>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagE3B1ZCC9lv9mAGx7CoMqy2i8K0LrsOYIAdgdhaExA&s=10" alt="">
+                    <article>
+                        <h2>PROJECT 6</h2>
+                        <p>very cool project, I made it with my bear hands. much and much blood sweat and tears put into this, decades of effort and dedication for this one project. hire me.</p>
+                    </article>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagE3B1ZCC9lv9mAGx7CoMqy2i8K0LrsOYIAdgdhaExA&s=10" alt="">
+                    <article>
+                        <h2>PROJECT 7</h2>
+                        <p>very cool project, I made it with my bear hands. much and much blood sweat and tears put into this, decades of effort and dedication for this one project. hire me.</p>
+                    </article>
+                </div>
+                
+        </section>
+        <!--section>
+            <article class="">
+                <h2>Bonjour! I is Emily</h2>
+                <p>Me draw.</p>
+                <p>WOW there is so much text here. So much it's actually infathomable the amount of text there are. Can you believe it? With this much text, maybe growth of literacy rates in this nation will finally be a positive number.</p>
+            </article>
+        </section-->
+    </main>
+    <footer>
+        <div>
+            <p>@eiesenray -- em.s.seng@gmail.com -- <a href="../assets/EMILY_SENG_Resume.pdf" download="Emily_Seng_Resume.pdf">resume</a></p>
+        </div>
+    </footer>
+    <script src="../code.js"></script>
+    <script>
+        const horizontal = document.getElementById("horizontal-container");
+        
+        document.addEventListener('scroll', horizontalScroll);
+
+        function horizontalScroll() {
+            const yOffset = getVerticalOffset();
+            if (yOffset > window.innerHeight / 2 + 40) {
+                horizontal.style.marginLeft = `calc(${getVerticalOffset() * -0.1}vh + 50vh + 40px)`;
+            } else {
+                horizontal.style.marginLeft = "0";
+            }
+        }
+
+        function getVerticalOffset() {
+            return window.scrollY;
+        }
+    </script>
+</body>
+</html>

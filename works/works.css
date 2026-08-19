@@ -1,0 +1,86 @@
+section:nth-child(1) {
+    padding-top: 10%;
+}
+/* EvergrownArtDevelopment */
+section:nth-child(1) img {
+    position: relative;
+    left: -15vw;
+    width: 50vw;
+}
+
+/* 6 people */
+
+section:nth-child(2) img {
+    width: 90vw;
+}
+
+section:nth-child(3) {
+    padding: 5% 0;
+}
+
+/* ANIM211 Vid */
+
+section:nth-child(3) video {
+    position: relative;
+    left: -12vw;
+    width: 60vw;
+}
+
+/* ANIM221 Vid */
+
+section:nth-child(4) video {
+    position: relative;
+    left: 12vw;
+    width: 60vw;
+}
+
+section:nth-child(5) {
+    padding: 0;
+}
+
+/* Modeling1/painting */
+
+section:nth-child(5) img:nth-child(1) {
+    width: 65vw;
+    position: relative;
+    left: -10vw;
+}
+
+/* Crossword/Newspaper Collage */
+
+section:nth-child(5) img:nth-child(2) {
+    width: 33vw;
+    position: relative;
+    left: -7vw;
+    top: 25vh;
+}
+
+section:nth-child(6) {
+    padding: 0 0 10% 0;
+}
+
+/* Philly */
+
+section:nth-child(6) img:nth-child(1) {
+    width: 38vw;
+    position: relative;
+    left: -6vw;
+}
+
+/* Persona */
+
+section:nth-child(6) img:nth-child(2) {
+    width: 36vw;
+    position: relative;
+    left: 5vw;
+    top: 17vh;
+}
+
+footer div {
+    height: 15vh;
+    padding: 4vh 0;
+}
+
+footer div p {
+    font-size: 1.8rem;
+}

@@ -1,0 +1,140 @@
+/* header {
+    background-color: var(--primary);
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+}
+
+#preHeader {
+    background-color: var(--primary);
+    height: 100vh;
+} */
+
+main h1 {
+    padding: 10rem 0 0 7vw;
+    font-family: "Intel One Mono", monospace;
+    font-weight: 600;
+    font-size: 5rem;
+}
+
+img {
+    /* border: dashed 15px pink; */
+    box-shadow: 5px 5px 10px black;
+}
+
+.bio {
+    gap: 0rem;
+}
+
+.bio img {
+    width: 37rem;
+    box-shadow: none;
+    margin-right: -3rem;
+    z-index: 1;
+}
+
+.bio article {
+    height: 60vh;
+    width: 60vh;
+    padding: 10%;
+    background: url("./assets/textBG/infoBox1.png");
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bio2 img {
+    width: 25rem;
+    z-index: 1;
+    margin-right: -8vw;
+}
+
+.bio2 article {
+    position: relative;
+    left: -7vw;
+    top: 10vh;
+    margin-right: -20vw;
+    background: url("./assets/textBG/linedPaper1.png");
+    background-size: 100% 100%;
+    height: 50vh;
+    width: 50vw;
+    padding: 0% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bio2 article p {
+    width: 80%;
+}
+
+.bio3 {
+    display: block;
+    padding: 10vh 0 0 0;
+    position: relative;
+    top: 15vh;
+}
+
+.bio3 img {
+    width: 52vw;
+}
+
+.bio4 {
+    height: 70vh;
+    width: 84vw;
+    background: url("./assets/textBG/SRPS_infoBox.png");
+    background-size: 100% 100%;
+    margin-left: -7vw;
+}
+
+.bio4 img:nth-child(1) {
+    width: 30%;
+    transform: rotate(-10deg);
+    box-shadow: none;
+    margin-left: -5vw;
+}
+
+.bio4 img:nth-child(2) {
+    position: relative;
+    top: 20%;   
+    height: 80vh;
+    z-index: 1;
+}
+
+.bio4 article {
+    padding: 5%;
+}
+
+.bio5 {
+    padding: 45% 0 20% 0;
+    justify-content:space-around;
+}
+
+.bio5 article {
+    width: 25%;
+    margin-left: 5%;
+}
+
+.bio5 div {
+    position: relative;
+    left: 0;
+    top: -100px;
+    background:var(--light);
+    width: 30vw;
+    height: 20vh;
+    border: solid 2px var(--dark);
+}
+
+.bio5 div::after {
+    content: "fas";
+    width: 30vw;
+    height: 20vh;
+    background: var(--dark);
+    position: absolute;
+    transform: translateX(30%) translateY(70%);
+    z-index: 1;
+    border: solid 2px var(--light);
+}
