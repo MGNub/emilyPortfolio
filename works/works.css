@@ -35,28 +35,38 @@ section:nth-child(4) video {
 }
 
 section:nth-child(5) {
-    padding: 0;
+    padding: 0 0 20%;
+}
+
+/* blank paper*/
+
+section:nth-child(5) img:nth-child(1) {
+    width: 60vw;
+    position: absolute;
+    left: 4vw;
+    z-index: -1;
+    transform: rotate(-12deg) translateY(10vh);
 }
 
 /* Modeling1/painting */
 
-section:nth-child(5) img:nth-child(1) {
-    width: 65vw;
+section:nth-child(5) img:nth-child(2) {
+    width: 50vw;
     position: relative;
-    left: -10vw;
+    left: -3vw;
 }
 
 /* Crossword/Newspaper Collage */
 
-section:nth-child(5) img:nth-child(2) {
-    width: 33vw;
+section:nth-child(5) img:nth-child(3) {
+    width: 30vw;
     position: relative;
-    left: -7vw;
-    top: 25vh;
+    left: 2vw;
+    top: 32vh;
 }
 
 section:nth-child(6) {
-    padding: 0 0 10% 0;
+    padding: 0 0 5% 0;
 }
 
 /* Philly */
@@ -73,7 +83,7 @@ section:nth-child(6) img:nth-child(2) {
     width: 36vw;
     position: relative;
     left: 5vw;
-    top: 17vh;
+    top: 10vh;
 }
 
 footer div {
@@ -82,5 +92,5 @@ footer div {
 }
 
 footer div p {
-    font-size: 1.8rem;
+    font-size: 2.6vh;
 }
