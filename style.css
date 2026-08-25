@@ -14,7 +14,7 @@
 
 p {
     font-family: "Intel One Mono", monospace;
-    font-size: 2.5vh;
+    font-size: 1.32vw;
 }
 
 body {
@@ -63,12 +63,13 @@ header div h1 {
 nav {
     font-family: "Lancelot", serif;
     font-weight: 400;
-    font-size: 2.9vh;
+    font-size: 1.66vw;
     display: flex;
     background: url("./assets/menu/navBar.png");
     background-size: auto 100%;
     background-color: var(--secondary);
-    height: 100px;
+    background-position: 4.54% 0;
+    height: 5.21vw;
     width: 100vw;
     align-items: center;
     justify-content: center;
@@ -121,6 +122,7 @@ nav a:hover {
 .active {
     /* transform: scale(110%); */
     color: var(--primary);
+    font-weight: bold;
 }
 
 main {

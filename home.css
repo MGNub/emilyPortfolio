@@ -13,7 +13,7 @@
 } */
 
 main h1 {
-    padding: 10rem 0 0 7vw;
+    padding: 8.33vw 0 0 7vw;
     font-family: "Intel One Mono", monospace;
     font-weight: 600;
     font-size: 7.4vh;
@@ -21,7 +21,7 @@ main h1 {
 
 img {
     /* border: dashed 15px pink; */
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 0.35vw 0.35vw 1vw black;
 }
 
 .bio {
@@ -31,7 +31,7 @@ img {
 .bio img {
     width: 30vw;
     box-shadow: none;
-    margin-right: -3rem;
+    margin-right: -2.5vw;
     z-index: 1;
 }
 
@@ -47,7 +47,7 @@ img {
 }
 
 .bio2 img {
-    width: 25rem;
+    width: 20.85vw;
     z-index: 1;
     margin-right: -8vw;
 }
@@ -121,7 +121,7 @@ img {
 .bio5 div {
     position: relative;
     left: 0;
-    top: -100px;
+    top: -5.21vw;
     background:var(--light);
     width: 30vw;
     height: 20vh;
