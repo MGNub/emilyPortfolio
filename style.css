@@ -14,7 +14,7 @@
 
 p {
     font-family: "Intel One Mono", monospace;
-    font-size: 1.32vw;
+    font-size: clamp(12px, 1.8vw, 128px);
 }
 
 body {
@@ -29,7 +29,7 @@ header {
     background: url("./assets/works/philly1.png");
     background-size: 100% 320%;
     background-position: 0% 20%;
-    /* background-color: rgb(0, 0, 0, 0.4); */
+    background-color: rgb(0, 0, 0, 0.4);
     background-blend-mode: overlay;
     height: 60vh;
     width: 100vw;
@@ -49,13 +49,13 @@ header div {
 }
 
 header div p {
-    color: #3B1709;
+    color: var(--light);
     margin-top: 1vw;
     text-shadow: black 0 0 0.5vw;
 }
 
 header div a {
-    color: #3B1709;
+    color: var(--light);
     text-decoration: underline;
 }
 
@@ -157,12 +157,12 @@ footer {
 
 footer div {
     background: url("./assets/textBG/blankPaper.png");
-    height: 10vh;
-    width: 45vw;
+    height: 20vh;
+    width: 60vw;
     background-size: 100% auto;
     background-position: 0 100%;
     text-align: center;
-    padding: 1.5% 0;
+    padding: 3.5% 0;
 }
 
 footer div a {
