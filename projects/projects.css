@@ -7,10 +7,6 @@
     z-index: -1;
 }
 
-p {
-    font-size: 1vw;
-}
-
 main {
 }
 
@@ -44,6 +40,10 @@ main section .card img {
 
 main section .card article {
     width: 90%;
+}
+
+main section .card article p {
+    font-size: 1vw;
 }
 
 main section > article {
