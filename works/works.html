@@ -12,40 +12,80 @@
 <body>
     <div id = "preHeader"></div>
     <header>
+        <video autoplay muted loop>
+            <source src="../assets/menu/Reel-26-27.webm">
+        </video>
+        <div class="overlay"></div>
         <div>
             <p>@eiesenray / em.s.seng@gmail.com / <a href="../assets/EMILY_SENG_Resume.pdf" download="Emily_Seng_Resume.pdf">resume</a> / <a href="https://www.linkedin.com/in/emily-ray-seng/" target="_blank">linkedin</a></p>
         </div>
     </header>
     <nav>
-        <a href="../index.html"><div>Bio</div></a>
+        <a href="../index.html"><div>Home</div></a>
+        <a href="../bio/bio.html"><div>Bio</div></a>
         <a href="" class="active"><div>Works</div></a>
-        <a href=""><div>Projects</div></a>
+        <!-- <a href=""><div>Projects</div></a> -->
     </nav>
     <main>
-        <section>
-            <img src="../assets/works/evergrownArtDevelopment.png" alt="">
+        <div class="bar"></div>
+        <section class="flex-column justify-content-start">
+            <h2>VFX & COMPOSITIONING</h2>
+            <div>
+                <video autoplay muted loop>
+                    <source src="../assets/works/ess323_colorshot1_final.mp4">
+                </video>
+                <video autoplay muted loop>
+                    <source src="../assets/works/ANIM211_01.webm">
+                </video>
+            </div>
         </section>
-        <section>
-            <img src="../assets/works/sixPeasants.png" alt="">
+        <div class="bar"></div>
+        <section class="flex-row">
+            <div class="flex-column">
+                <h2>ANIMATION, RIGGING, MODELING</h2>
+                <video autoplay muted loop controls>
+                    <source src="../assets/works/Animation_Work26-27.mp4">
+                </video>
+            </div>
+            <div class="flex-column">
+                <video autoplay muted loop controls>
+                    <source src="../assets/works/213_Assignment_Final.mp4">
+                </video>
+                <video autoplay muted loop>
+                    <source src="../assets/works/OrganicHandModel.mp4">
+                </video>
+            </div>
         </section>
-        <section>
-            <video muted autoplay loop>
-                <source src="../assets/works/ANIM211_01.webm" type="video/webm">
-            </video>
+        <div class="bar"></div>
+        <section class="d-flex flex-column">
+            <h2>ANIMATIC</h2>
+            <div class="d-flex flex-row gap-2">
+                <video autoplay muted loop controls>
+                    <source src="../assets/works/Emily-Seng-Final-Animatic.webm">
+                </video>
+                <div class="d-flex flex-column align-items-center">
+                    <div class="d-flex">
+                        <img id="animatic1" src="../assets/works/animatic1.png" alt="">
+                        <img id="animatic2" src="../assets/works/animatic2.png" alt="">
+                    </div>
+                    <img id="animatic3" src="../assets/works/animatic3.png" alt="">
+                </div>
+            </div>
         </section>
-        <section>
-            <video muted autoplay loop>
-                <source src="../assets/works/ANIM221_02.webm" type="video/webm">
-            </video>
-        </section>
-        <section>
-            <img src="../assets/textBG/blankPaper.png" alt="">
-            <img src="../assets/works/modeling1.png" alt="">
-            <img src="../assets/works/crosswords.png" alt="">
-        </section>
-        <section>
-            <img src="../assets/works/philly1.png" alt="">
-            <img src="../assets/works/persona.png" alt="">
+        <div class="bar"></div>
+        <section class="d-flex flex-column">
+            <h2>CONCEPT ART</h2>
+            <div>
+                <img src="../assets/works/sparkedSnow.png" alt="">
+                <img src="../assets/works/sparkedSnow2.png" alt="">
+                <img src="../assets/works/evergrownArtDevelopment.png" alt="">
+                <img src="../assets/works/evergrownSticker.png" alt="">
+            </div>
+            <div>
+                <img src="../assets/works/wowieHowRomantical.png" alt="">
+                <img src="../assets/works/sixPeasants.png" alt="">
+            </div>
+            
         </section>
     </main>
     <footer>

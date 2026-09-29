@@ -1,89 +1,134 @@
-section:nth-child(1) {
-    padding-top: 10%;
-}
-/* EvergrownArtDevelopment */
-section:nth-child(1) img {
-    position: relative;
-    left: -15vw;
-    width: 50vw;
+img {
+    width: 300px;
 }
 
-/* 6 people */
-
-section:nth-child(2) img {
-    width: 90vw;
+h2 {
+    color: #3B1709;
+    font-family: "Instrument Serif", serif;
+    font-size: 4vw;
 }
 
-section:nth-child(3) {
-    padding: 5% 0;
+main {
+    align-items: center;
+    padding-bottom: 5%;
 }
 
-/* ANIM211 Vid */
-
-section:nth-child(3) video {
-    position: relative;
-    left: -12vw;
-    width: 60vw;
+.bar {
+    font-family: "Lancelot", serif;
+    font-weight: 400;
+    font-size: 1.4vw;
+    display: flex;
+    background: url("../assets/menu/navBar.png");
+    background-size: auto 100%;
+    background-color: var(--secondary);
+    background-position: 0 0;
+    height: 5.85vw;
+    width: 100vw;
+    /* align-items: center;
+    justify-content: center; */
+    gap: 3vw;
+    border: 3px var(--dark);
+    border-style: solid none;
 }
 
-/* ANIM221 Vid */
+section {
+    height: 80vh;
+    width: 85vw;
+}
+
+/* VFX */
+
+section:nth-child(2) {
+    background: url("../assets/works/workBG1.png");
+    background-size: 100% 100%;
+}
+
+section:nth-child(2) div {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+
+section:nth-child(2) video {
+    width: 45vw;
+}
+
+/* ANIMATION */
+
+section:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    background: url("../assets/works/workBG2.png");
+    background-size: 100% 100%;
+    align-items: center;
+    gap: 3%;
+}
+
+section:nth-child(4) h2 {
+    width: 42vw;
+}
+
+section:nth-child(4) div {
+    width: 36vw;
+}
 
 section:nth-child(4) video {
-    position: relative;
-    left: 12vw;
-    width: 60vw;
-}
-
-section:nth-child(5) {
-    padding: 0 0 20%;
-}
-
-/* blank paper*/
-
-section:nth-child(5) img:nth-child(1) {
-    width: 60vw;
-    position: absolute;
-    left: 4vw;
-    z-index: -1;
-    transform: rotate(-12deg) translateY(10vh);
-}
-
-/* Modeling1/painting */
-
-section:nth-child(5) img:nth-child(2) {
-    width: 50vw;
-    position: relative;
-    left: -3vw;
-}
-
-/* Crossword/Newspaper Collage */
-
-section:nth-child(5) img:nth-child(3) {
-    width: 30vw;
-    position: relative;
-    left: 2vw;
-    top: 32vh;
-}
-
-section:nth-child(6) {
-    padding: 0 0 5% 0;
-}
-
-/* Philly */
-
-section:nth-child(6) img:nth-child(1) {
-    width: 38vw;
-    position: relative;
-    left: -6vw;
-}
-
-/* Persona */
-
-section:nth-child(6) img:nth-child(2) {
     width: 36vw;
+}
+
+section:nth-child(4) div:nth-child(2) video:nth-child(1) {
     position: relative;
     left: 5vw;
-    top: 10vh;
+}
+
+section:nth-child(4) div:nth-child(2) video:nth-child(2) {
+    position: relative;
+    top: -1vw;
+    left: -4vw;
+}
+
+/* ANIMATIC */
+
+section:nth-child(6) {
+    background: url("../assets/works/workBG3.png");
+    background-size: 100%;
+    gap: 1%;
+}
+
+section:nth-child(6) > div {
+    gap: 1%;
+}
+
+section:nth-child(6) > div > div {
+    gap: 3%;
+}
+
+section:nth-child(6) > div > div > div {
+    gap:5%;
+}
+
+section:nth-child(6) video {
+    width: 37vw;
+}
+
+#animatic1 {
+    width: 20vw;
+}
+
+#animatic2 {
+    width: 20vw;
+}
+
+#animatic3 {
+    width: 30vw;
+}
+
+/* CONCEPT ART */
+
+section:nth-child(8) {
+    background: url("../assets/works/workBG1.png");
+    background-size: 100%;
 }
 
 footer div {

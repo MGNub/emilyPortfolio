@@ -1,5 +1,7 @@
 :root {
+    --white: #FFFFFF;
     --light: #D9D9D9;
+    --background: #402B23;
     --dark: #301e0d;
     --darker: #382420;
     --primary: #533B43;
@@ -18,34 +20,53 @@ p {
 }
 
 body {
-    background-color: var(--primary);
-    background-size: 50%;
+    background: url("./assets/menu/background2.png");
+    background-color: #3D2B20B8;
+    background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
 }
 
 header {
     background: url("./assets/works/philly1.png");
     background-size: 100% 320%;
     background-position: 0% 20%;
-    background-color: rgb(0, 0, 0, 0.4);
     background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 1);
     height: 60vh;
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: var(--light);
+    overflow: hidden;
+}
+
+header .overlay {
+    position: absolute;
+    height: 60vh;
+    width: 100vw;
+    background: rgba(23, 13, 0, 0.5);
+}
+
+header video {
+    position: absolute;
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
 }
 
 header div {
+    position: absolute;
     background: url(./assets/menu/line_cover.png);
     background-size: 100% 100%;
-    height: 100%;
+    height: 60vh;
     width: 70%;
     display: flex;
     justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 header div p {
@@ -69,25 +90,27 @@ header div a {
 nav {
     font-family: "Lancelot", serif;
     font-weight: 400;
-    font-size: 1.66vw;
+    font-size: 1.4vw;
     display: flex;
-    background: url("./assets/menu/navBar.png");
+    /* background: url("./assets/menu/navBar.png"); */
     background-size: auto 100%;
     background-color: var(--secondary);
     background-position: 4.54% 0;
-    height: 5.21vw;
+    /* height: 5.21vw; */
+    height: 0;
     width: 100vw;
-    align-items: center;
-    justify-content: center;
-    gap: 10vw;
-    border: 3px var(--dark);
-    border-style: solid none;
+    /* align-items: center;
+    justify-content: center; */
+    gap: 3vw;
+    /* border: 3px var(--dark);
+    border-style: solid none; */
     z-index: 10;
+    transform: translateY(-6vw);
 }
 
 nav div {
-    width: 20vw;
-    height: 10vw;
+    width: 12vw;
+    height: 6vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,13 +133,18 @@ nav a:nth-child(3) div {
     background-size: 100% 100%;
 }
 
+nav a:nth-child(4) div {
+    background: url("./assets/menu/navBtn2.png");
+    background-size: 100% 100%;
+}
+
 nav div:hover {
     transform: scale(110%);
 }
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: var(--secondary);
     z-index: 1;
 }
 
@@ -134,7 +162,7 @@ nav a:hover {
 main {
     display: flex;
     flex-direction: column;
-    background: var(--light);
+    background: var(--background);
     width: 70vw;
     border: 1px var(--dark);
     border-style: none solid;

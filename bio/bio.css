@@ -1,0 +1,196 @@
+/* header {
+    background-color: var(--primary);
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+}
+
+#preHeader {
+    background-color: var(--accent);
+    height: 100vh;
+} */
+
+main h1 {
+    padding: 8.33vw 0 0 7vw;
+    font-family: "Intel One Mono", monospace;
+    font-weight: 600;
+    font-size: 6vw;
+    color: var(--white);
+}
+
+img {
+    /* border: dashed 15px pink; */
+    box-shadow: 0.35vw 0.35vw 1vw black;
+}
+
+.bio {
+    gap: 1.5vw;
+    padding: 8% 0;
+}
+
+.bio img {
+    position: relative;
+    top: -2vh;
+    width: 36vw;
+    box-shadow: none;
+    margin-left: -16vw;
+    z-index: 1;
+}
+
+.bio article {
+    height: 39vw;
+    width: 39vw;
+    padding: 10%;
+    background: url("../assets/textBG/infoBox1.png");
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: -15vw;
+}
+
+.bio2 img {
+    width: 25vw;
+    z-index: 1;
+    margin-right: 3vw;
+}
+
+.bio2 article {
+    position: relative;
+    left: -10vw;
+    top: 15vh;
+    margin-right: -20vw;
+    background: url("../assets/textBG/linedPaper1.png");
+    background-size: 100% 100%;
+    height: 31vw;
+    width: 75vw;
+    padding: 0% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bio2 article p {
+    width: 95%;
+}
+
+.bio3 {
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+    margin-left: -15vw;
+    padding-top: 20%;
+}
+
+.bio3 img:nth-child(1) {
+    position: absolute;
+    margin-top: 0;
+    width: 62vw;
+    transform: rotate(-17deg);
+    translate: -39% 5%;
+}
+
+.bio3 img:nth-child(2) {
+    width: 22vw;
+    transform: rotate(-15deg);
+    translate: 8vw 62%;
+    box-shadow: none;
+    z-index: 1;
+}
+
+.bio3 article {
+    position: relative;
+    top: 20vh;
+    left: -5vw;
+    z-index: 0;
+    background: url("../assets/textBG/greyBox.png");
+    background-size: 100% 100%;
+    height: 33vw;
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    text-align: center;
+    translate: 8vw;
+}
+
+.bio4 {
+    display: block;
+    padding: 35vh 0 0 0;
+    position: relative;
+    top: 15vh;
+    left: -10vw;
+}
+
+.bio4 img {
+    width: 52vw;
+}
+
+.bio5 img:nth-child(1) {
+    width: 30%;
+    transform: rotate(-10deg);
+    box-shadow: none;
+    margin-left: -5vw;
+}
+
+
+.bio5 {
+    height: 70vh;
+    width: 84vw;
+    background: url("../assets/textBG/SRPS_infoBox.png");
+    background-size: 100% 100%;
+    margin-left: -5vw;
+}
+
+.bio5 img:nth-child(1) {
+    width: 30%;
+    transform: rotate(-10deg);
+    box-shadow: none;
+    margin-left: -5vw;
+}
+
+.bio5 img:nth-child(2) {
+    position: relative;
+    top: 20%;   
+    height: 80vh;
+    z-index: 1;
+}
+
+.bio5 article {
+    padding: 5%;
+}
+
+.bio6 {
+    padding: 45% 0 20% 0;
+    justify-content:space-around;
+}
+
+.bio6 article {
+    width: 25%;
+    margin-left: 5%;
+    color: var(--white);
+}
+
+.bio6 div {
+    position: relative;
+    left: 0;
+    top: -5.21vw;
+    background:var(--light);
+    width: 30vw;
+    height: 20vh;
+    border: solid 2px var(--dark);
+}
+
+.bio6 div::after {
+    content: "fas";
+    width: 30vw;
+    height: 20vh;
+    background: var(--dark);
+    position: absolute;
+    transform: translateX(30%) translateY(70%);
+    z-index: 1;
+    border: solid 2px var(--light);
+}
