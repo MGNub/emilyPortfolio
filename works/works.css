@@ -36,6 +36,15 @@ section {
     width: 85vw;
 }
 
+.workIcon {
+    position: absolute;
+    width: fit-content !important;
+}
+
+.workIcon img {
+    width: 5vw;
+}
+
 /* VFX */
 
 section:nth-child(2) {
@@ -52,6 +61,16 @@ section:nth-child(2) div {
 
 section:nth-child(2) video {
     width: 45vw;
+}
+
+section:nth-child(2) .workIcon1 {
+    left: 5vw;
+    transform: translateY(28vw);
+}
+
+section:nth-child(2) .workIcon2 {
+    left: 49vw;
+    transform: translateY(28vw);
 }
 
 /* ANIMATION */
@@ -88,6 +107,22 @@ section:nth-child(4) div:nth-child(2) video:nth-child(2) {
     left: -4vw;
 }
 
+section:nth-child(4) .workIcon1 {
+    left: 11vw;
+    transform: translateY(15vw);
+}
+
+section:nth-child(4) .workIcon2 {
+    left: 54vw;
+    transform: translateY(-19vw);
+}
+
+section:nth-child(4) .workIcon3 {
+    left: 81vw;
+    transform: translateY(12vw);
+}
+
+
 /* ANIMATIC */
 
 section:nth-child(6) {
@@ -110,6 +145,7 @@ section:nth-child(6) > div > div > div {
 
 section:nth-child(6) video {
     width: 37vw;
+    height: fit-content;
 }
 
 #animatic1 {
@@ -124,12 +160,76 @@ section:nth-child(6) video {
     width: 30vw;
 }
 
+section:nth-child(6) .workIcon1 {
+    left: 11vw;
+    transform: translateY(12vw);
+}
+
+section:nth-child(6) .workIcon2 {
+    right: 10vw;
+    transform: translateY(5.3vw);
+}
+
+
 /* CONCEPT ART */
 
 section:nth-child(8) {
     background: url("../assets/works/workBG1.png");
     background-size: 100%;
+    justify-content: flex-start;
+    padding-bottom: 0%;
 }
+
+section:nth-child(8) img {
+    position: absolute;
+}
+
+.concept1 {
+    left: 8vw;
+    transform: translateY(2vw);
+    width: 18vw;
+}
+
+.concept2 {
+    left: 27vw;
+    transform: translateY(5vw);
+    width: 18vw;
+}
+
+.concept3 {
+    left: 47vw;
+    transform: translateY(5vw);
+    width: 23vw;
+}
+
+.concept4 {
+    left: 69vw;
+    transform: translateY(-4vw);
+    width: 25vw;
+}
+
+.concept5 {
+    left: 8vw;
+    transform: translateY(22vw);
+    width: 26vw;
+}
+
+.concept6 {
+    left: 66vw;
+    transform: translateY(17vw);
+    width: 30vw;
+}
+
+section:nth-child(8) .workIcon {
+    left: 34.5vw;
+    transform: translateY(28vw);
+}
+
+section:nth-child(8) .workIcon img {
+    position: static;
+}
+
+/* footer */
 
 footer div {
     height: 15vh;
