@@ -29,6 +29,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-blend-mode: overlay;
+    overflow-x: hidden;
 }
 
 header {
@@ -52,21 +53,20 @@ header .overlay {
 
 header video {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 60vh;
     object-fit: cover;
 }
 
 header div {
     position: absolute;
-    background: url(./assets/menu/line_cover.png);
+    background: url(./assets/menu/WIDEfRAME.png);
     background-size: 100% 100%;
     height: 60vh;
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
 }
 
 header div p {
@@ -80,11 +80,22 @@ header div a {
     text-decoration: underline;
 }
 
+header #reel-link {
+    position: absolute;
+    color: var(--light);
+    top: 49vh;
+    right: 10vw;
+    font-size: 3rem;
+    z-index: 10;
+    font-family: "Instrument Serif", serif;
+    opacity: 0;
+}
 
 #preHeader {
-    background-color: var(--primary);
+    background-color: var(--background);
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    opacity: 0;
 }
 
 nav {
@@ -98,7 +109,7 @@ nav {
     background-position: 4.54% 0;
     /* height: 5.21vw; */
     height: 0;
-    width: 100vw;
+    width: 100%;
     /* align-items: center;
     justify-content: center; */
     gap: 3vw;

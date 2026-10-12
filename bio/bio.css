@@ -164,6 +164,11 @@ img {
 }
 
 .bio6 {
+    width: 70vw;
+    height: 30vh;
+}
+
+/* .bio6 {
     padding: 45% 0 20% 0;
     justify-content:space-around;
 }
@@ -193,4 +198,4 @@ img {
     transform: translateX(30%) translateY(70%);
     z-index: 1;
     border: solid 2px var(--light);
-}
+} */
